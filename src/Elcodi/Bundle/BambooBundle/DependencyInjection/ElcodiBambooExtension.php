@@ -80,8 +80,10 @@ class ElcodiBambooExtension extends AbstractExtension
             "elcodi.core.bamboo.cache_prefix"                                   => $config['cache_prefix'],
             "elcodi.core.bamboo.store_tracker"                                  => $config['store_tracker'],
             "elcodi.core.bamboo.store_name"                                     => $config['store_name'],
-            "elcodi.core.bamboo.store_enabled"                                  => $config['store_enabled'],
-            "elcodi.core.bamboo.store_under_construction"                       => $config['store_under_construction'],
+            "elcodi.core.bamboo.store_enabled"                                  => $config['store_enabled']['enabled'],
+            "elcodi.core.bamboo.store_enabled.template_path"                    => $config['store_enabled']['template_path'],
+            "elcodi.core.bamboo.store_under_construction"                       => $config['store_under_construction']['enabled'],
+            "elcodi.core.bamboo.store_under_construction.template_path"         => $config['store_under_construction']['template_path'],
 
             "elcodi.core.bamboo.emails.layout"                                  => $config['emails']['defaults']['layout'],
             "elcodi.core.bamboo.emails.sender_email"                            => $config['emails']['defaults']['sender_email'],
