@@ -107,6 +107,21 @@ class Cart implements CartInterface
     protected $amount;
 
     /**
+     * @var AddressInterface
+     *
+     * delivery address
+     */
+    protected $deliveryAddress;
+
+    /**
+     * @var AddressInterface
+     *
+     * billing address
+     */
+    protected $billingAddress;
+
+
+    /**
      * Get Id
      *
      * @return int Id
@@ -431,5 +446,53 @@ class Cart implements CartInterface
             },
             0
         );
+    }
+
+    /**
+     * Get DeliveryAddress
+     *
+     * @return AddressInterface DeliveryAddress
+     */
+    public function getDeliveryAddress()
+    {
+        return $this->deliveryAddress;
+    }
+
+    /**
+     * Sets DeliveryAddress
+     *
+     * @param AddressInterface $deliveryAddress DeliveryAddress
+     *
+     * @return $this Self object
+     */
+    public function setDeliveryAddress($deliveryAddress)
+    {
+        $this->deliveryAddress = $deliveryAddress;
+
+        return $this;
+    }
+
+    /**
+     * Get BillingAddress
+     *
+     * @return AddressInterface BillingAddress
+     */
+    public function getBillingAddress()
+    {
+        return $this->billingAddress;
+    }
+
+    /**
+     * Sets BillingAddress
+     *
+     * @param AddressInterface $billingAddress BillingAddress
+     *
+     * @return $this Self object
+     */
+    public function setBillingAddress($billingAddress)
+    {
+        $this->billingAddress = $billingAddress;
+
+        return $this;
     }
 }

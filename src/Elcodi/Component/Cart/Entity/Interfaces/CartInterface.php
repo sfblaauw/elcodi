@@ -179,4 +179,36 @@ interface CartInterface
      * @return integer Quantity
      */
     public function getQuantity();
+
+    /**
+     * Get DeliveryAddress
+     *
+     * @return AddressInterface DeliveryAddress
+     */
+    public function getDeliveryAddress();
+
+    /**
+     * Sets DeliveryAddress
+     *
+     * @param AddressInterface $deliveryAddress DeliveryAddress
+     *
+     * @return $this Self object
+     */
+    public function setDeliveryAddress($deliveryAddress);
+
+    /**
+     * Get BillingAddress
+     *
+     * @return AddressInterface BillingAddress
+     */
+    public function getBillingAddress();
+
+    /**
+     * Sets BillingAddress
+     *
+     * @param AddressInterface $billingAddress BillingAddress
+     *
+     * @return $this Self object
+     */
+    public function setBillingAddress($billingAddress);
 }
